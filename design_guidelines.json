@@ -1,0 +1,135 @@
+{
+  "theme": "dark_and_light",
+  "typography": {
+    "headings": {
+      "font_family": "Outfit, sans-serif",
+      "strategy": "Geometric and clean, providing an Apple/Linear aesthetic. Use tight tracking (tracking-tight) for large headers.",
+      "sizes": {
+        "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-semibold",
+        "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-medium",
+        "h3": "text-xl sm:text-2xl font-medium",
+        "h4": "text-lg sm:text-xl font-medium"
+      }
+    },
+    "body": {
+      "font_family": "Figtree, sans-serif",
+      "strategy": "Highly legible, geometric sans-serif for optimal readability in tools.",
+      "sizes": {
+        "base": "text-base leading-relaxed",
+        "small": "text-sm",
+        "xs": "text-xs uppercase tracking-[0.2em]"
+      }
+    }
+  },
+  "colors": {
+    "primary": "#2563EB",
+    "secondary": "#9333EA",
+    "accent": "#10B981",
+    "light_mode": {
+      "background": "#FFFFFF",
+      "surface": "#F4F4F5",
+      "surface_glass": "rgba(255, 255, 255, 0.7)",
+      "text": "#09090B",
+      "text_muted": "#71717A",
+      "border": "#E4E4E7"
+    },
+    "dark_mode": {
+      "background": "#090A0F",
+      "surface": "#12141D",
+      "surface_glass": "rgba(9, 10, 15, 0.6)",
+      "text": "#FAFAFA",
+      "text_muted": "#A1A1AA",
+      "border": "#27272A"
+    }
+  },
+  "visual_enhancers": {
+    "border_radius": "16px (rounded-2xl) for main containers, rounded-full for pills/primary buttons.",
+    "shadows": "Soft, Apple-inspired elevations. light mode: shadow-[0_8px_30px_rgb(0,0,0,0.04)]. dark mode: use 1px borders with inner glow.",
+    "glassmorphism": "Used for sticky headers, floating navs. backdrop-blur-xl bg-white/70 or bg-black/60. MUST have a delicate 1px inner stroke.",
+    "textures": "Subtle noise overlay (opacity-5) over backgrounds to remove digital flatness."
+  },
+  "grids_and_layouts": {
+    "strategy": "Vercel/Linear inspired directory layout. Generous padding.",
+    "hero": "Massive typography, central search bar, abstract background imagery. High negative space.",
+    "tools_grid": "Bento or uniform card grid. grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4. gap-6.",
+    "tool_page": "Split layout: Tool interface in main central column (col-span-8), sidebar or details on right (col-span-4).",
+    "spacing": "Google Material spacing (generous). Use py-20 or py-24 for main sections. p-6 or p-8 inside cards."
+  },
+  "components": {
+    "buttons": "Animated hover states (scale-95), rounded-xl, high contrast. Primary uses #2563EB.",
+    "cards": "Soft hover lift (-translate-y-1), 16px radius, subtle border.",
+    "inputs": "Rounded-xl, large click targets (h-12 or h-14 for main search). Focus states with 2px ring.",
+    "navigation": "Sticky glass header, global search shortcut (Cmd+K)."
+  },
+  "motion": {
+    "library": "framer-motion",
+    "patterns": {
+      "hover": "Scale down slightly on click (0.97), lift on hover for cards.",
+      "page_load": "Staggered fade-in-up for tool cards.",
+      "modals": "Scale up and fade in."
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure primary blue #2563EB has accessible text over it (white text).",
+    "focus": "focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none on all interactives.",
+    "aria": "Include aria-labels for icon-only buttons. data-testid on all key elements."
+  },
+  "media": {
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1736843640242-f29cc14bb70e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMG1vZGVybiUyMGdsYXNzbW9ycGhpc20lMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MjczMTg1MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract blue squares and rectangles",
+        "category": "Hero Section Background / Pattern"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1720174595774-2b5b4cb19d47?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMG1vZGVybiUyMGdsYXNzbW9ycGhpc20lMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MjczMTg1MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Blurry white abstract shape",
+        "category": "Light Mode Pattern / Overlay"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1720173391541-523cdbf2f21f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1vZGVybiUyMGdsYXNzbW9ycGhpc20lMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MjczMTg1MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Blurry flower/abstract shape in blue and pink",
+        "category": "Creative/AI Tools Section Background"
+      },
+      {
+        "url": "https://images.pexels.com/photos/30426363/pexels-photo-30426363.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Young man in modern workspace",
+        "category": "Testimonials Avatar 1"
+      },
+      {
+        "url": "https://images.pexels.com/photos/20157010/pexels-photo-20157010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Elegant portrait of a young male professional",
+        "category": "Testimonials Avatar 2"
+      }
+    ],
+    "icons": "lucide-react for all general UI icons. Phosphor Icons (@phosphor-icons/react) if additional premium weight is needed."
+  },
+  "instructions_to_main_agent": [
+    "You MUST build this app using Tailwind CSS and raw HTML tags for layout structures to ensure maximum flexibility.",
+    "Use Shadcn primitives (Dialog, Select, Dropdown, Accordion) ONLY for complex interactive components.",
+    "Strictly adhere to the dark/light mode setup. Implement a global theme toggle.",
+    "DO NOT make generic centered layouts. Use F-pattern for dashboards and tools directory.",
+    "The Hero search bar must be large, centered, with glassmorphism or a subtle glow (Linear inspired).",
+    "Each tool card must have a subtle hover effect (e.g., `-translate-y-1` and a refined box-shadow).",
+    "Ensure all interactive elements have `data-testid` attributes.",
+    "Do NOT use transparent backgrounds on dropdowns or overlays. They must be solid or blurred with high opacity.",
+    "Use Framer Motion to animate tool grids in the homepage and to transition between states in individual tools."
+  ],
+  "universal_guidelines_for_main_agent": [
+    "Never apply universal transition like `transition: all`. Target specific properties.",
+    "Never center align the entire app container (.App { text-align: center }).",
+    "No generic, AI-slop outputs. Use tight letter spacing for headings, and generous padding for sections.",
+    "Do not use emojis for icons. Use lucide-react.",
+    "Do not use dummy placeholder images. Only use the images provided in the media section."
+  ],
+  "3d_and_creative_libraries": {
+    "recommendation": "Not strictly necessary for this utility app, but a subtle Framer Motion parallax or TS Particles in the hero section would elevate the 'Modern SaaS' vibe."
+  },
+  "general_ui_ux_design_guidelines": [
+    "Design for speed and responsiveness. A utility tool platform is judged on performance.",
+    "Keep tool interfaces immediate. The core action (e.g., compress image) should be visible above the fold.",
+    "Use progressive disclosure for advanced settings in tools.",
+    "Ensure the left sidebar or top navigation is consistently accessible across all pages.",
+    "Include clear, SEO-friendly structured content (H1s, FAQs, How-To) below the interactive tool interface."
+  ]
+}

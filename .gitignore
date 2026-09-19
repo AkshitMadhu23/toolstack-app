@@ -1,0 +1,55 @@
+# ==========================================
+# Toolstack Application - Root .gitignore
+# ==========================================
+
+# ---------- React Frontend ----------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------- Java 17 Spring Boot Backend ----------
+target/
+java-backend/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven Wrapper Jar (Optional: can be regenerated or downloaded automatically)
+java-backend/.mvn/wrapper/maven-wrapper.jar
+
+# ---------- Environment Variables & Secrets ----------
+.env
+*.env
+java-backend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.production.local
+
+# ---------- IDEs & Editors ----------
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# ---------- OS Generated Files ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ---------- Legacy Python Virtual Env ----------
+venv/
+*.pyc
