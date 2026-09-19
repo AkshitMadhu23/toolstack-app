@@ -2,10 +2,10 @@ import { Link, useParams } from "react-router-dom";
 import { getTool, getRelated, CATEGORIES } from "@/lib/toolsRegistry";
 import SEO from "@/components/SEO";
 import FAQ from "@/components/FAQ";
-import NotFound from "@/pages/NotFound";
+import NotFound from "@/pages/NotFound.jsx";
 import { ChevronRight, Home, ArrowRight, Share2, Check } from "lucide-react";
 import { useState, Suspense, lazy } from "react";
-import { ToolCard } from "@/pages/HomePage";
+import { ToolCard } from "@/pages/Homepage.jsx";
 
 const TOOL_COMPONENTS = {
   "json-formatter": lazy(() => import("@/tools/JSONFormatter")),

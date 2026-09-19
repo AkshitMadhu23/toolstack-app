@@ -1,8 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { CATEGORIES, TOOLS } from "@/lib/toolsRegistry";
 import SEO from "@/components/SEO";
-import NotFound from "@/pages/NotFound";
-import { ToolCard } from "@/pages/HomePage";
+import NotFound from "@/pages/NotFound.jsx";
+import { ToolCard } from "@/pages/Homepage.jsx";
 
 export default function CategoryPage() {
   const { category } = useParams();
